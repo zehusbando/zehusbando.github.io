@@ -70,6 +70,7 @@ body {
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
+    min-height: 100vh;
     
 }
 .header{
@@ -89,6 +90,7 @@ z-index: 4;
 .logo{
     display: flex;
     flex-wrap: wrap;
+    height: 50px;
 }
 
 
@@ -313,7 +315,7 @@ font-style:italic;
     align-items: center;
     justify-content: center;
     background: #333;
-    z-index: 200;
+    z-index: 2000;
     transition: opacity 0.75s, visibility 0.75s;
 }
 .loader--hidden{
@@ -674,11 +676,13 @@ teambox:nth-child(3)::before,
     max-width: 1170px;
     margin: auto;
     padding: 0 15px;
-    display: flex;
+    max-height: 400px;
+   
     
 }
 .testimonials{
     padding: 100px 0;
+    
 }
 .section-header{
     text-align: center;
@@ -695,6 +699,7 @@ teambox:nth-child(3)::before,
     background-color: hsl(0, 0%, 100%);
     padding: 30px;
     border-radius: 30px;
+    max-height: 230px;
 }
 .testimonials-item img{
     max-width: 80px;
@@ -736,3 +741,4 @@ color: hsl(0, 0%, 40%);
     width: 12px;
     background-color: hsl(0, 0%, 100%);
 }
+

@@ -13,15 +13,50 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
         <link
         rel="stylesheet"
-        href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+        href="reviewcss.css"
       />
-
+        <link rel="stylesheet" href="navstyle.css">
     </head>
 
        
 
 <body>
-          
+    <div class="loader">
+                    
+    </div>
+          <nav>
+            <ul class="sidebar">
+                <li onclick=hideSidebar() ><a href="index.html"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+            <ul>
+                <li><a class="hideOnMobile"><img src="images/gold.png" class="logo"></a></li>
+                <li><a class="hideOnMobile">Home</a></li>
+                <li><a class="hideOnMobile">Shop</a></li>
+                <li><a class="hideOnMobile">About</a></li>
+                <li><a class="hideOnMobile">Contact</a></li>
+                <li><a class="hideOnMobile">Login</a></li>
+                <li onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+
+            </ul>
+          </nav>
+          <script>
+            function showSidebar(){
+                const sidebar = document.querySelector('.sidebar')
+                sidebar.style.display='flex'
+            };
+            function hideSidebar(){
+                const sidebar = document.querySelector('.sidebar')
+                sidebar.style.display='none'
+            }
+          </script>
+
+
+
           <a href="" role="button" aria-label="Toggle menu" class="lottie-wrapper">
           
             <lottie-player src="https://assets10.lottiefiles.com/datafiles/9gIwZ2uiiKglyb0/data.json" style="width: 60px; height: 60px;"></lottie-player>
@@ -156,8 +191,7 @@
                                     <span class="job">Actor</span>
                                 </div>
                             </div>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi doloremque 
-                                consequatur veritatis, repudiandae quaerat fugiat enim accusamus corrupti beatae dolorum.</p>
+                            <p>i ate my jewellry</p>
                             <div class="rating">
                                 <i class="fa fa-star"></i>
                                 <i class="fa fa-star"></i>
@@ -168,14 +202,13 @@
                         </div>
                         <div class="swiper-slide testimonials-item">
                             <div class="info">
-                                <img src="images/joe rogan.jpeg">
+                                <img src="images/obama.jpg">
                                 <div class="text-box">
-                                    <h3 class="name">Joe rogan</h3>
-                                    <span class="job">UFC comentator</span>
+                                    <h3 class="name">Barrack Obama</h3>
+                                    <span class="job">Literally the president</span>
                                 </div>
                             </div>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi doloremque 
-                                consequatur veritatis, repudiandae quaerat fugiat enim accusamus corrupti beatae dolorum.</p>
+                            <p>My fellow american this is amazing</p>
                             <div class="rating">
                                 <i class="fa fa-star"></i>
                                 <i class="fa fa-star"></i>
@@ -192,8 +225,7 @@
                                     <span class="job">Actor</span>
                                 </div>
                             </div>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi doloremque 
-                                consequatur veritatis, repudiandae quaerat fugiat enim accusamus corrupti beatae dolorum.</p>
+                            <p>yeah nice rings</p>
                             <div class="rating">
                                 <i class="fa fa-star"></i>
                                 <i class="fa fa-star"></i>
@@ -210,8 +242,7 @@
                                     <span class="job">Office Worker</span>
                                 </div>
                             </div>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi doloremque 
-                                consequatur veritatis, repudiandae quaerat fugiat enim accusamus corrupti beatae dolorum.</p>
+                            <p>hey lois check out these Bracelets</p>
                             <div class="rating">
                                 <i class="fa fa-star"></i>
                                 <i class="fa fa-star"></i>
@@ -226,22 +257,22 @@
             </div>
         </div>
     </section>
-   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-   <script>
-    const swiper = new Swiper('.js-testimonials-slider', {
-        grabCursor: true,
-        spaceBetween:30,
-        pagination:{
-            el: '.js-testimonial-pagination',
-            clickable: true
-        },
-        breakpoints:{
-            767:{
-                slidesPerView: 1
-            }
-        }
-    
-});
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+     const swiper = new Swiper('.js-testimonials-slider', {
+         grabCursor: true,
+         spaceBetween:30,
+         pagination:{
+             el: '.js-testimonial-pagination',
+             clickable: true
+         },
+         breakpoints:{
+             767:{
+                 slidesPerView: 1
+             }
+         }
+     
+ });
    </script>
 
 
